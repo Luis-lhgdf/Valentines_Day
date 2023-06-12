@@ -1,7 +1,5 @@
 import tkinter as tk
-from tkinter import  PhotoImage, Canvas, Button, END
-import pandas as pd
-import os
+from tkinter import  PhotoImage, Canvas, Button
 import random
 
 
