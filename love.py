@@ -1,28 +1,8 @@
 import tkinter as tk
 from tkinter import  PhotoImage, Canvas, Button, END
-import warnings
-import ctypes
 import pandas as pd
 import os
 import random
-# Obtém o diretório atual
-dir_atual = os.getcwd()
-
-warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
-
-name_erros = ''
-
-
-def msgbox(title, text, style):
-    #  Styles:
-    #  0 : OK
-    #  1 : OK | Cancel
-    #  2 : Abort | Retry | Ignore
-    #  3 : Yes | No | Cancel 6, 7, 2
-    #  4 : Yes | No
-    #  5 : Retry | Cancel
-    #  6 : Cancel | Try Again | Continue
-    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
 
 root = tk.Tk()
